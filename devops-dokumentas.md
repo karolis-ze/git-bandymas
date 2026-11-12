@@ -17,3 +17,11 @@ gali sustabdyti visos sistemos veikimą atnaujinimo metu.
 DevOps padeda komandai greičiau reaguoti į vartotojų poreikius ir išvengti ilgų, stresą keliančių rankinio diegimo procesų. 
 Dėl glaudesnio bendradarbiavimo ir automatizacijos sumažėja klaidų skaičius, o iškilusias problemas galima išspręsti žymiai 
 operatyviau.
+
+## Git
+
+Komanda `git branch -d` (mažąja raide) saugiai ištrina šaką tik tada, kai visi jos pakeitimai jau yra sujungti su pagrindine 
+šaka. Komanda `git branch -D` (didžiąja raide) ištrina šaką priverstinai, net jei joje liko nesujungtų pakeitimų.
+
+**Kas yra merge commit?** Tai specialus sujungimo taškas (commit), turintis du tėvinius commit'us, kurį Git sukuria tuomet, 
+kai dvi šakos išsiskyrė ir abiejose buvo atlikti nauji pakeitimai, todėl jas reikia apjungti į vieną bendrą istoriją.
