@@ -12,3 +12,8 @@ kritinių klaidų turintis kodas.
 2. **Diegimo (Deployment) procesas:** Netinkamai sukonfigūruoti serverio aplinkos kintamieji ar trūkstamos priklausomybės 
 gali sustabdyti visos sistemos veikimą atnaujinimo metu.
 
+## Kodėl DevOps
+
+DevOps padeda komandai greičiau reaguoti į vartotojų poreikius ir išvengti ilgų, stresą keliančių rankinio diegimo procesų. 
+Dėl glaudesnio bendradarbiavimo ir automatizacijos sumažėja klaidų skaičius, o iškilusias problemas galima išspręsti žymiai 
+operatyviau.
