@@ -1,27 +1,24 @@
 # Kas yra DevOps
 
-DevOps yra programinės įrangos kūrimo ir IT operacijų komandų bendradarbiavimo kultūra bei praktikų visuma. Pagrindinis jos 
-tikslas – pagreitinti ir automatizuoti kodo kelią nuo jo parašymo iki pateikimo galutiniam vartotojui. Užuot dirbus atskirai, 
-programuotojai ir sistemų administratoriai kartu atsako už visą produkto gyvavimo ciklą. Tai leidžia dažniau išleisti 
-atnaujinimus, greičiau pastebėti klaidas ir užtikrinti stabilesnį sistemų veikimą.
+DevOps yra būdas, kaip programuotojai ir sistemų administratoriai dirba kartu kaip viena komanda. Pagrindinis tikslas – 
+automatizuoti visą procesą, kad naujas kodas kuo greičiau ir saugiau pasiektų vartotoją. Komandos nariai kartu prižiūri 
+projektą nuo pat sukūrimo iki veikimo serveryje. Dėl to atnaujinimai išleidžiami dažniau, o klaidos ištaisomos greičiau.
 
 ## Kur gali lūžti
 
-1. **Automatinio testavimo etapas:** Jei testai parašyti prastai arba neapima svarbių scenarijų, į produkciją gali patekti 
-kritinių klaidų turintis kodas.
-2. **Diegimo (Deployment) procesas:** Netinkamai sukonfigūruoti serverio aplinkos kintamieji ar trūkstamos priklausomybės 
-gali sustabdyti visos sistemos veikimą atnaujinimo metu.
+1. **Testavimo metu:** Jei testai nepastebi klaidos, sugedęs kodas patenka tiesiai vartotojams.
+2. **Įkeliant į serverį:** Jei serveryje trūksta kokių nors nustatymų ar programų, svetainė po atnaujinimo gali tiesiog 
+nebeveikti.
 
 ## Kodėl DevOps
 
-DevOps padeda komandai greičiau reaguoti į vartotojų poreikius ir išvengti ilgų, stresą keliančių rankinio diegimo procesų. 
-Dėl glaudesnio bendradarbiavimo ir automatizacijos sumažėja klaidų skaičius, o iškilusias problemas galima išspręsti žymiai 
-operatyviau.
+DevOps padeda komandai greičiau išleisti naujoves ir išvengti rankinio darbo klaidų. Be to, sugedus sistemai, visi kartu 
+problemą išsprendžia daug greičiau.
 
 ## Git
 
-Komanda `git branch -d` (mažąja raide) saugiai ištrina šaką tik tada, kai visi jos pakeitimai jau yra sujungti su pagrindine 
-šaka. Komanda `git branch -D` (didžiąja raide) ištrina šaką priverstinai, net jei joje liko nesujungtų pakeitimų.
+Komanda `git branch -d` (mažąja raide) saugiai ištrina šaką tik tada, kai jos pakeitimai jau perkelti į pagrindinę šaką. 
+Komanda `git branch -D` (didžiąja raide) ištrina šaką priverstinai, net jei joje liko neperkeltų pakeitimų.
 
-**Kas yra merge commit?** Tai specialus sujungimo taškas (commit), turintis du tėvinius commit'us, kurį Git sukuria tuomet, 
-kai dvi šakos išsiskyrė ir abiejose buvo atlikti nauji pakeitimai, todėl jas reikia apjungti į vieną bendrą istoriją.
+**Kas yra merge commit?** Tai specialus įrašas istorijoje, kurį Git sukuria sujungdamas dvi atskiras šakas, kai abiejose buvo 
+padaryta naujų pakeitimų.
